@@ -1,0 +1,41 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+     <div class="container-fluid">
+	<h1> Contacter<img src="http://ellesesiea.esy.es/app/views/img/logo.png" alt="text alternatif"/></h1>
+        <div class="col-xs-12 .col-md-8">
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, diam vitae porta porta, velit tellus faucibus nisi, quis posuere  ipsum sem id orci. Morbi viverra vulputate nisl mollis finibus. Cras feugiat elit non fringilla mollis. Etiam sit amet sagittis mi. Nulla facilisi. Ut pretium est ut metus placerat dapibus. </p>
+
+    {%  if flash.success %}
+        <div class="alert alert-success">
+
+            {{ flash.success }}
+        </div>
+    {% endif %}
+
+    {%  if flash.error %}
+        <div class="alert alert-danger">
+
+            {{ flash.error }}
+        </div>
+    {% endif %}
+
+<form action=" path_for('action') " method="post">
+ <p>Insert : <label for="nEnter a name to insert"><input type="text" name="insert" /></p>
+ <p><input type="submit" value="INSERT"></p>
+</form>
+
+<form action=" path_for('action') " method="post">
+ <p>Delete : <input type="text" name="Enter an id to delete in the list" /></p>
+ <p><input type="submit" value="DELETE"></p>
+</form>
+
+<form action=" path_for('action') " method="post">
+ <p>Update first step : <input type="text" name="Enter an id to update in the list" /></p>
+  <p>Update second step : <input type="text" name="Enter a new name" /></p>
+ <p><input type="submit" value="UPDATE"></p>
+</form>
+
+</div>
+      </div>
+{% endblock %}	

@@ -1,0 +1,31 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+
+   <div class="container-fluid">
+    <div class=".col-md-9 .col-md-push-3">
+            <div class="col-xs-6 .col-sm-4">
+                <h1> Insert <img src="http://ellesesiea.esy.es/app/views/img/logo.png" alt="text alternatif"/></h1>
+
+ <div class="row">
+<form action=" {{ path_for('insert') }} " method="post">
+<h3> Insert </h3>
+<div class="form-group>
+ <p> Insert : <label for="insert">Enter a name to insert</label><input type="text" name="insert" /></p>
+ <p><input type="submit" value="INSERT"></p>
+</div>
+</form>
+
+   <div class=".col-md-9 .col-md-push-5">
+ <a href="http://ellesesiea.esy.es/index.php/show">  <h1> click to see </h1> </a>
+
+  </div>   
+       </div>       
+
+
+        </div>
+     
+    </div>
+    </div>
+</div>
+{% endblock %}

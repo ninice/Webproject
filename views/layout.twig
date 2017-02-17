@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="http://ellesesiea.esy.es/vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"  >
+<link href="http://ellesesiea.esy.es/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<title>Site club Elles@ESIEA</title>
+<!-- Custom Fonts -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+  	<div class="navbar-header">
+       <a href="{{ path_for('root') }}" class="navbar-brand">Club Elles@ESIEA</a>
+  	</div>
+      <div class="nav navbar-nav">
+          <li> <a href="{{ path_for('root') }}"> Home </a> </li>
+      </div>
+      <div class="nav navbar-nav">
+          <li> <a href="http://ellesesiea.esy.es/index.php/show"> All </a> </li>
+      </div>
+
+      <div class="nav navbar-nav">
+          <li> <a href="http://ellesesiea.esy.es/index.php/showone"> One </a> </li>
+      </div>
+       
+      <div class="nav navbar-nav">
+          <li> <a href="http://ellesesiea.esy.es/index.php/showinsert"> Insert </a> </li>
+      </div>
+      
+      <div class="nav navbar-nav">
+          <li> <a href="http://ellesesiea.esy.es/index.php/showdelete"> Delete </a> </li>
+      </div>
+
+     <div class="nav navbar-nav">
+          <li> <a href="http://ellesesiea.esy.es/index.php/showupdate"> Update </a> </li>
+      </div>
+
+      
+  </div>
+
+</nav>
+
+  {% block content %}{% endblock %}
+</body>
+
+</html>
